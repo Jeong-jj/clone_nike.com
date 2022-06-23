@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/* 본문구역에서 공통 스타일을 제외한 스타일 */
+
+#main {
+    max-width: 1265px; margin: 0 auto;
+    font-size: 16px;
+    color: #111;
+}
+
+
+/* banner 공통 */
+#main .bannerbuy {
+    padding-bottom: 90px;
+    margin-top: 25px;
+}
+
+#main .bannerbuy p:first-child {
+    text-align: center;
+    font-size: 43px;
+    font-weight: bold;
+    margin: 13px 0;
+}
+#main .bannerbuy p:nth-child(2) {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main .bnr_title {
+    display: block;
+    font-size: 23px;
+    font-weight: 550;
+    margin-bottom: 16px;
+    padding-left: 8px;
+}
+
+/* btn buybtn 공통 */
+#main .btnbox .btn {
+    display: block;
+    background: #111; color: #fff;
+    cursor: pointer; border-radius: 20px;
+    font-size: 15px; letter-spacing: -1px;
+    line-height: 1.5em; text-align: center;
+    padding: 8px 28px; margin: 0 auto;
+    transition: all 0.2s;
+}
+#main .btnbox .btn:hover {opacity: 80%;}
+#main .buybtn {width: 113px; margin: 0 auto 6px;
+}
+
+
+/* banner1 */
+#main .banner1 .btnbox a {width: 160px;}
+
+
+/* banner2 */
+#main .banner2 .btnbox {width: 311px; margin: 0 auto;}
+#main .banner2 .btnbox a {
+    float: left;
+}
+#main .banner2 .btnbox a:first-child {
+    margin-right: 6px;
+}
+#main .banner2 .btnbox a:last-child {
+    width: 192px; letter-spacing: -2px;
+}
+
+
+/* banner8 */
+#main .banner8>div {
+    padding: 0 8px;
+}
+#main .banner8 .title {padding: 0;}
+#main .banner8>div>a {
+    display: block;
+    width: 616px;
+    height: 700px;
+}
+#main .banner8>div:nth-child(2) {float: left;}
+#main .banner8>div:nth-child(3) {float: right;}
+#main .banner8 .leftads>a {
+    background-image: url(../imgs/left-bnr.jpg);
+    background-size: cover;
+    background-position: -127px 0;
+}
+#main .banner8 .leftads {position: relative;}
+#main .banner8 .leftads .adsguide_L {
+    position: absolute; bottom: 45px; left: 55px;
+}
+#main .banner8 .rightads>a {
+    background-image: url(../imgs/right-bnr.jpg);
+    background-size: cover;
+    background-position: -127px 0;
+}
+#main .banner8 .rightads {position: relative;}
+#main .banner8 .rightads .adsguide_R {
+    position: absolute; bottom: 45px; left: 55px;
+}
+#main .banner8 .btnbox .btn {
+    color: #111;
+    background: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+#main .banner8 .bnr9subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* banner9 */
+#main .banner9 {
+    margin-top: 80px; padding-bottom: 40px;
+    position: relative;}
+#main .banner9 .slide2-group img {
+    width: 411px;
+}
+#main .banner9 .slide2-group .slidebox {
+    width: 411px;
+    /* float: left; */
+}
+#main .banner9 .slide2-group .slidebox h4 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+#main .banner9 .slide2-group .slidebox p {
+    font-size: 15px;
+    font-weight: 550;
+    color: #757575;
+    padding-top: 7px;
+}
+
+#main .banner9 .slick-arrow {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    font-size: 60px; color: #ddd; cursor: pointer;
+    background: none;
+    border: none;
+}
+#main .banner9 .slick-arrow.slick-prev {left: -35px; z-index: 9999;}
+#main .banner9 .slick-arrow.slick-next {right: -30px;}
+#main .banner9 .slick-dots {position: absolute; bottom: -60px;
+    left: 50%; transform: translateX(-50%);}
+#main .banner9 .slick-dots li {display: inline-block; margin: 0 5px;}
+#main .banner9 .slick-dots li button {
+    width: 30px; height: 30px;
+    border: none; background: #ddd; color: #ddd;
+    cursor: pointer;
+}
+#main .banner9 .slick-dots li.slick-active button {background: #999; color: #999;}
+
+/* banner10 */
+#main .banner10 {margin-top: 80px; padding-bottom: 70px;}
+#main .banner10 .imgbox img {
+    width: 411px;
+}
+#main .banner10 .imgbox a {
+    display: block;
+    float: left;
+}
+#main .banner10 .imgbox a:nth-child(2) {
+    margin: 0 15px;
+}
+#main .banner10 .imgbox a>p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    position: relative; bottom: 60px; left: 50px;
+}

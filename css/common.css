@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/*
+ 헤더구역, 푸터구연 등 공통구역에 대한 스타일
+ 콘텐츠 박스의 최대넓이(.row)
+ body태그에 기본 글꼴, 크기 등 설정
+*/
+
+body {overflow-x: hidden;}
+
+.row {max-width: 1350px; margin: 0 auto;}
+.footrow {width: 880px; margin: 0 auto;}
+
+/* ----------- htop ----------- */
+
+#header #htop {
+    background: #F5F5F5;
+    padding: 0 38px 0 36px;
+    position: relative;
+}
+
+#header #htop a:hover {opacity: 50%;}
+
+/* subsidiary */
+#header #htop .subsidiary img {width: 24px;}
+
+#header #htop .subsidiary li {
+    float: left;
+    padding: 0 12px;
+}
+#header #htop .subsidiary li a {
+    display: block;
+    padding: 8px 0;
+}
+
+/* membership */
+
+#header #htop .membership {
+    position: absolute; top: 50%; right: 35px;
+    transform: translateY(-50%);
+}
+#header #htop .membership li {
+    float: left;
+}
+#header #htop .membership li a {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #111;
+    vertical-align: middle;
+
+}
+#header #htop .membership li+li::before {
+    content: '|';
+    font-size: 1px;
+    letter-spacing: 0;
+    /* width: 1px;
+    height: 10px;
+    background: #333;
+    position: absolute;
+    top: 13px; */
+}
+
+/* ---------- hbottom ---------- */
+
+#hbottom {
+    padding: 0 38px 0 40px;
+    position: relative;
+}
+
+/* logo */
+
+#hbottom #logo {float: left;}
+#hbottom #logo img {width: 80px;}
+#hbottom #logo a:hover {opacity: 50%;}
+
+/* nav 공통 */
+#hbottom #nav {
+    float: left;
+    margin-left: 360px;
+}
+#hbottom #nav a {display: block;}
+/* #hbottom #nav .depth1 {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* nav - depth1 */
+#hbottom #nav .depth1>li {float: left;}
+#hbottom #nav .depth1>li>a {
+    display: block;
+    padding: 18px 14px;
+    font-size: 16px;
+    color: #111;
+    text-align: center;
+}
+#hbottom #nav .depth1>li:hover {border-bottom: 2px solid #111;}
+
+
+/* nav - depth2 */
+#hbottom #nav .depth1 .depth_inner{
+    width: 100%; 
+    padding: 16px 40px 40px;
+    background: #fff;
+    position: absolute; top: 100%; left: 0;
+    height: 0; opacity: 0;
+    z-index: -1; transition: all 0.5s;
+}
+#hbottom #nav .depth1 li:hover>.depth_inner {z-index: 2; height: auto; opacity: 1;}
+
+#hbottom #nav .depth1 .depth_inner .depth2>li>a {
+    margin-bottom: 14px;
+    vertical-align: middle;
+}
+#hbottom #nav .depth1 .depth_inner .depth3 {height: 0; opacity: 0; transition: all 0.5s;}
+#hbottom #nav .depth1 li:hover .depth3 {height: auto; opacity: 1;}
+
+#hbottom #nav .depth1 .depth_inner .sub_4menu {width: 64%; margin: 0 auto;}
+#hbottom #nav .depth1 .depth_inner .sub_4menu .depth2>li {width: 25%; float: left;}
+#hbottom #nav .depth1 .depth_inner .sub_5menu {width: 73%; margin: 0 auto;}
+#hbottom #nav .depth1 .depth_inner .sub_5menu .depth2>li {width: 20%; float: left;}
+
+#hbottom #nav .depth1 .depth_inner .sub_5menu .depth2>li:last-child {margin-top: 60px;}
+#hbottom #nav .depth1>li:nth-child(4) .sub_5menu .depth2>li:last-child {margin-top: 0;}
+
+/* depth3 */
+.depth3 li a {font-size: 14px; color: #999; margin-bottom: 6px;}
+.depth3 li a:hover {color: #111;}
+
+/* search box */
+
+#hbottom .search {
+    position: absolute; top: 10px; right: 130px;
+    background: #F5F5F5;
+    border-radius: 100px;
+    width: 180px;
+    margin: 0 10px;
+}
+
+#hbottom .search #keyword {
+    width: 100%;
+    height: 40px;
+    background: inherit;
+    border: none;
+    padding: 8px 48px;
+}
+#hbottom .search #keyword:focus {
+    outline: none;
+}
+#hbottom .search button {
+    width: 41px;
+    height: 41px;
+    position: absolute; top: 0px; left: -4px;
+    background: inherit;
+    color: #606060;
+    padding: 7px;
+    margin-left: 7px;
+    border-radius: 100px;
+    border: none;
+    font-size: 25px;
+}
+#hbottom .search button:hover {
+    background: #e5e5e5;
+}
+
+/* prebutton */
+
+#hbottom .prebutton {
+    position: absolute; top: 12px; right: 47px;
+}
+#hbottom .prebutton a {
+    float: left;
+    margin-left: 17px;
+    font-size: 25px;
+    position: relative;
+}
+#hbottom .prebutton a:hover::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e5e5e5;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+/* ----------- footer ------------ */
+
+#footer {
+    background: #111;
+    color: #fff;
+    margin-top: 156px;
+}
+
+/* foot_top */
+
+#footer .foot_top {
+    padding: 45px 0;
+}
+#footer .foot_top>div {
+    width: 25%;
+    float: left;
+    padding-top: 20px;
+}
+#footer .foot_top dt {
+    font-size: 13px;
+}
+#footer .foot_top dd {
+    font-size: 11px;
+    font-weight: 600;
+    color: #999;
+    margin: 10px 0 0;
+}
+#footer .foot_top a:hover {color: #fff;}
+
+#footer .foot_top .company a {
+    display: block;
+    margin: 0 0 9px;
+    font-size: 13px;
+}
+
+#footer .foot_top .sns a {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    font-size: 12px;
+    background: #555;
+    color: #111;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 6px;
+}
+#footer .foot_top .sns a i {
+    position: relative; top: 3px; right: 0;
+}
+#footer .foot_top .sns a:hover {background: #fff;}
+
+/* foot_mid */
+
+#footer .foot_mid {
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 18px 32px;
+    font-size: 10px;
+    color: #999;
+    position: relative;
+}
+#footer .foot_mid .rights a{
+    color: #fff;
+    margin-right: 11px;
+}
+#footer .foot_mid .rights i {
+    margin-right: 6px;
+    font-size: 13px;
+}
+#footer .foot_mid .laws {
+    position: absolute; top: 50%; right: 32px;
+    transform: translateY(-50%);
+}
+#footer .foot_mid .laws a:last-child {
+    display: inline-block;
+    padding-left: 16px;
+}
+
+/* foot_bottom */
+
+#footer .foot_bottom {
+    padding: 16px 0 25px;
+    font-size: 11px;
+    color: #999;
+    line-height: 18px;
+}
+#footer .foot_bottom .subinfo {
+    position: relative;
+}
+#footer .foot_bottom .subinfo>div {
+    width: 50%;
+}
+#footer .foot_bottom .subinfo a {color: #fff; cursor: pointer;}
+#footer .foot_bottom .subinfo .adress {
+    float: left;
+}
+#footer .foot_bottom .subinfo .insurance {
+    float: right;
+    padding-left: 20px;
+}
+#footer .foot_bottom .subinfo .insurance p {
+    margin: 0 16px 20px 0;
+}
+#footer .foot_bottom .subinfo .insurance a {text-decoration: underline;}
+#footer .foot_bottom .subinfo .escrow {
+    position: absolute; bottom: 12px; right: 45px;
+    width: 24px;
+    cursor: pointer;
+}
+#footer .foot_bottom .subinfo .adress i {
+    font-style: normal;
+}
+#footer .foot_bottom .subinfo .adress i::after {
+    content: '|';
+    padding-left: 4px;
+    font-size: 10px;
+    /* width: 1px;
+    height: 10px;
+    background: #999; */
+}
