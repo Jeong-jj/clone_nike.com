@@ -2,7 +2,7 @@
 
 💻 nike.com 클론 코딩
 
-https://jeong-jj.github.io/clone_nike.com/
+https://jeong-jj.github.io/practice-nike-clone/
 
 🖊️ 사이트 구성에 대한 기본 이해하기
 
